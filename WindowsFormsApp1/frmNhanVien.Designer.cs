@@ -66,14 +66,20 @@
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+<<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(0, 400);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(884, 50);
+=======
+            this.panel1.Location = new System.Drawing.Point(0, 403);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(884, 47);
+>>>>>>> 3cffc04ae2b996a2d02288039c9c882df7b1a50a
             this.panel1.TabIndex = 0;
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(757, 21);
+            this.btnDong.Location = new System.Drawing.Point(765, 12);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(75, 23);
             this.btnDong.TabIndex = 11;
@@ -82,7 +88,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(42, 21);
+            this.btnThem.Location = new System.Drawing.Point(50, 12);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
             this.btnThem.TabIndex = 6;
@@ -91,7 +97,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(185, 21);
+            this.btnXoa.Location = new System.Drawing.Point(193, 12);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
             this.btnXoa.TabIndex = 7;
@@ -100,7 +106,7 @@
             // 
             // btnBoQua
             // 
-            this.btnBoQua.Location = new System.Drawing.Point(614, 21);
+            this.btnBoQua.Location = new System.Drawing.Point(622, 12);
             this.btnBoQua.Name = "btnBoQua";
             this.btnBoQua.Size = new System.Drawing.Size(75, 23);
             this.btnBoQua.TabIndex = 10;
@@ -109,7 +115,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(328, 21);
+            this.btnSua.Location = new System.Drawing.Point(336, 12);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 8;
@@ -118,7 +124,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(471, 21);
+            this.btnLuu.Location = new System.Drawing.Point(479, 12);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 9;
@@ -145,7 +151,11 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
+<<<<<<< HEAD
             this.panel2.Size = new System.Drawing.Size(884, 234);
+=======
+            this.panel2.Size = new System.Drawing.Size(884, 229);
+>>>>>>> 3cffc04ae2b996a2d02288039c9c882df7b1a50a
             this.panel2.TabIndex = 0;
             // 
             // NgVaoLam
@@ -299,11 +309,19 @@
             // 
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
+<<<<<<< HEAD
             this.dgvNhanVien.Location = new System.Drawing.Point(0, 234);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 51;
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.Size = new System.Drawing.Size(884, 166);
+=======
+            this.dgvNhanVien.Location = new System.Drawing.Point(0, 229);
+            this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.RowHeadersWidth = 51;
+            this.dgvNhanVien.RowTemplate.Height = 24;
+            this.dgvNhanVien.Size = new System.Drawing.Size(884, 174);
+>>>>>>> 3cffc04ae2b996a2d02288039c9c882df7b1a50a
             this.dgvNhanVien.TabIndex = 0;
             this.dgvNhanVien.Click += new System.EventHandler(this.dgvNhanVien_Click);
             // 

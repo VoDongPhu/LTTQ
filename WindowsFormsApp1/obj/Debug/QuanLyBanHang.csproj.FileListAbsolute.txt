@@ -66,3 +66,20 @@ C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.Gener
 C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\bin\Debug\Quanlybanhang.mdf
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\bin\Debug\Quanlybanhang_log.ldf
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemHoaDon.resources
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmHoaDon.resources
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmSanPham.resources
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KhachHang.resources
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmNhanVien.resources
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMain.resources
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
