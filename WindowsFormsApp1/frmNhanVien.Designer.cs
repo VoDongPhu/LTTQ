@@ -66,15 +66,9 @@
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-<<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(0, 400);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(884, 50);
-=======
-            this.panel1.Location = new System.Drawing.Point(0, 403);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 47);
->>>>>>> 3cffc04ae2b996a2d02288039c9c882df7b1a50a
             this.panel1.TabIndex = 0;
             // 
             // btnDong
@@ -151,11 +145,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-<<<<<<< HEAD
             this.panel2.Size = new System.Drawing.Size(884, 234);
-=======
-            this.panel2.Size = new System.Drawing.Size(884, 229);
->>>>>>> 3cffc04ae2b996a2d02288039c9c882df7b1a50a
             this.panel2.TabIndex = 0;
             // 
             // NgVaoLam
@@ -169,10 +159,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(445, 192);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 17);
+            this.label8.Size = new System.Drawing.Size(106, 17);
             this.label8.TabIndex = 14;
             this.label8.Text = "Ngày vào làm";
             // 
@@ -310,19 +301,11 @@
             // 
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-<<<<<<< HEAD
             this.dgvNhanVien.Location = new System.Drawing.Point(0, 234);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 51;
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.Size = new System.Drawing.Size(884, 166);
-=======
-            this.dgvNhanVien.Location = new System.Drawing.Point(0, 229);
-            this.dgvNhanVien.Name = "dgvNhanVien";
-            this.dgvNhanVien.RowHeadersWidth = 51;
-            this.dgvNhanVien.RowTemplate.Height = 24;
-            this.dgvNhanVien.Size = new System.Drawing.Size(884, 174);
->>>>>>> 3cffc04ae2b996a2d02288039c9c882df7b1a50a
             this.dgvNhanVien.TabIndex = 0;
             this.dgvNhanVien.Click += new System.EventHandler(this.dgvNhanVien_Click);
             // 
