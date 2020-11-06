@@ -1,0 +1,68 @@
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\bin\Debug\Quanlybanhang.mdf
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\bin\Debug\Quanlybanhang_log.ldf
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemHoaDon.resources
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.HoaDon.resources
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SanPham.resources
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KhachHang.resources
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.NhanVien.resources
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMain.resources
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Các môn học kỳ 3\Lập trình trực quan\QuanLyBanHang\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemHoaDon.resources
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmHoaDon.resources
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmSanPham.resources
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KhachHang.resources
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmNhanVien.resources
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMain.resources
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\bin\Debug\Quanlybanhang.mdf
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\bin\Debug\Quanlybanhang_log.ldf
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Tan Viet\Documents\LTTQ-6cbf95a0bd987b39109e6308b538d9c7c31159ff\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\bin\Debug\Quanlybanhang.mdf
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\bin\Debug\Quanlybanhang_log.ldf
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemHoaDon.resources
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmHoaDon.resources
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmSanPham.resources
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KhachHang.resources
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmNhanVien.resources
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMain.resources
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Tan Viet\Documents\LTTQ\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\bin\Debug\Quanlybanhang.mdf
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\bin\Debug\Quanlybanhang_log.ldf
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmTimKiemHoaDon.resources
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmHoaDon.resources
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmSanPham.resources
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.KhachHang.resources
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmNhanVien.resources
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMain.resources
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\ASUS\Desktop\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
