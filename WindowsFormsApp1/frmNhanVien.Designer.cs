@@ -36,6 +36,8 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.NgVaoLam = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.NgSinhNV = new System.Windows.Forms.DateTimePicker();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.SDTNV = new System.Windows.Forms.MaskedTextBox();
@@ -50,8 +52,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.NgVaoLam = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -66,9 +66,9 @@
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 394);
+            this.panel1.Location = new System.Drawing.Point(0, 400);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 56);
+            this.panel1.Size = new System.Drawing.Size(884, 50);
             this.panel1.TabIndex = 0;
             // 
             // btnDong
@@ -145,8 +145,25 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(884, 212);
+            this.panel2.Size = new System.Drawing.Size(884, 234);
             this.panel2.TabIndex = 0;
+            // 
+            // NgVaoLam
+            // 
+            this.NgVaoLam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.NgVaoLam.Location = new System.Drawing.Point(622, 187);
+            this.NgVaoLam.Name = "NgVaoLam";
+            this.NgVaoLam.Size = new System.Drawing.Size(176, 22);
+            this.NgVaoLam.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(445, 192);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(94, 17);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Ngày vào làm";
             // 
             // NgSinhNV
             // 
@@ -282,30 +299,13 @@
             // 
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvNhanVien.Location = new System.Drawing.Point(0, 212);
+            this.dgvNhanVien.Location = new System.Drawing.Point(0, 234);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 51;
             this.dgvNhanVien.RowTemplate.Height = 24;
-            this.dgvNhanVien.Size = new System.Drawing.Size(884, 182);
+            this.dgvNhanVien.Size = new System.Drawing.Size(884, 166);
             this.dgvNhanVien.TabIndex = 0;
             this.dgvNhanVien.Click += new System.EventHandler(this.dgvNhanVien_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(445, 192);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 17);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Ngày vào làm";
-            // 
-            // NgVaoLam
-            // 
-            this.NgVaoLam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.NgVaoLam.Location = new System.Drawing.Point(622, 187);
-            this.NgVaoLam.Name = "NgVaoLam";
-            this.NgVaoLam.Size = new System.Drawing.Size(176, 22);
-            this.NgVaoLam.TabIndex = 15;
             // 
             // frmNhanVien
             // 
