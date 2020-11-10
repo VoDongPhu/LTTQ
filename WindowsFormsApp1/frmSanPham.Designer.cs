@@ -234,7 +234,7 @@
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(75, 23);
             this.btnDong.TabIndex = 23;
-            this.btnDong.Text = "Đóng";
+            this.btnDong.Text = "&Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
             // 
             // btnThem
@@ -243,7 +243,7 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
             this.btnThem.TabIndex = 18;
-            this.btnThem.Text = "Thêm";
+            this.btnThem.Text = "&Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
             // btnXoa
@@ -252,7 +252,7 @@
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
             this.btnXoa.TabIndex = 19;
-            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Text = "&Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
             // btnBoQua
@@ -261,7 +261,7 @@
             this.btnBoQua.Name = "btnBoQua";
             this.btnBoQua.Size = new System.Drawing.Size(75, 23);
             this.btnBoQua.TabIndex = 22;
-            this.btnBoQua.Text = "Bỏ qua";
+            this.btnBoQua.Text = "&Bỏ qua";
             this.btnBoQua.UseVisualStyleBackColor = true;
             // 
             // btnSua
@@ -270,7 +270,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 20;
-            this.btnSua.Text = "Sửa";
+            this.btnSua.Text = "&Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             // 
             // btnLuu
@@ -279,7 +279,7 @@
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 21;
-            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Text = "&Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
             // 
             // dgvSanPham
