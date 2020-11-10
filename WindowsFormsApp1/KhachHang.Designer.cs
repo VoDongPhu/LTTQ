@@ -37,8 +37,10 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.frmKhachHang = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,10 +53,8 @@
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.txtSoDiem = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.NgSinhKH = new System.Windows.Forms.DateTimePicker();
+            this.SDTKH = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.frmKhachHang.SuspendLayout();
@@ -142,12 +142,12 @@
             // frmKhachHang
             // 
             this.frmKhachHang.BackColor = System.Drawing.SystemColors.Control;
+            this.frmKhachHang.Controls.Add(this.SDTKH);
+            this.frmKhachHang.Controls.Add(this.NgSinhKH);
             this.frmKhachHang.Controls.Add(this.textBox6);
             this.frmKhachHang.Controls.Add(this.textBox5);
             this.frmKhachHang.Controls.Add(this.textBox4);
             this.frmKhachHang.Controls.Add(this.textBox3);
-            this.frmKhachHang.Controls.Add(this.textBox2);
-            this.frmKhachHang.Controls.Add(this.textBox1);
             this.frmKhachHang.Controls.Add(this.label8);
             this.frmKhachHang.Controls.Add(this.label7);
             this.frmKhachHang.Controls.Add(this.label6);
@@ -164,20 +164,33 @@
             this.frmKhachHang.TabIndex = 2;
             this.frmKhachHang.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // textBox2
+            // textBox6
             // 
-            this.textBox2.Location = new System.Drawing.Point(670, 99);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 26);
-            this.textBox2.TabIndex = 14;
+            this.textBox6.Location = new System.Drawing.Point(670, 153);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(182, 26);
+            this.textBox6.TabIndex = 18;
             // 
-            // textBox1
+            // textBox5
             // 
-            this.textBox1.Location = new System.Drawing.Point(670, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 26);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox5.Location = new System.Drawing.Point(211, 151);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(167, 26);
+            this.textBox5.TabIndex = 17;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(211, 101);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(167, 26);
+            this.textBox4.TabIndex = 16;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(211, 51);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(167, 26);
+            this.textBox3.TabIndex = 15;
             // 
             // label8
             // 
@@ -300,33 +313,21 @@
             this.txtSoDiem.Size = new System.Drawing.Size(200, 22);
             this.txtSoDiem.TabIndex = 16;
             // 
-            // textBox3
+            // NgSinhKH
             // 
-            this.textBox3.Location = new System.Drawing.Point(211, 51);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 26);
-            this.textBox3.TabIndex = 15;
+            this.NgSinhKH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.NgSinhKH.Location = new System.Drawing.Point(670, 51);
+            this.NgSinhKH.Name = "NgSinhKH";
+            this.NgSinhKH.Size = new System.Drawing.Size(182, 26);
+            this.NgSinhKH.TabIndex = 19;
             // 
-            // textBox4
+            // SDTKH
             // 
-            this.textBox4.Location = new System.Drawing.Point(211, 101);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 26);
-            this.textBox4.TabIndex = 16;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(211, 151);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 26);
-            this.textBox5.TabIndex = 17;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(670, 153);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(182, 26);
-            this.textBox6.TabIndex = 18;
+            this.SDTKH.Location = new System.Drawing.Point(670, 102);
+            this.SDTKH.Mask = "(999) 000-0000";
+            this.SDTKH.Name = "SDTKH";
+            this.SDTKH.Size = new System.Drawing.Size(182, 26);
+            this.SDTKH.TabIndex = 20;
             // 
             // KhachHang
             // 
@@ -370,11 +371,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox chkGioiTinhKH;
         private System.Windows.Forms.TextBox txtSoDiem;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.DateTimePicker NgSinhKH;
+        private System.Windows.Forms.MaskedTextBox SDTKH;
     }
 }

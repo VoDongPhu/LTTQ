@@ -47,5 +47,34 @@ namespace WindowsFormsApp1.Class
             dap.Fill(table);
             return table;
         }
+        public static bool CheckKey(string sql)// HHàm kiểm tra khóa trùng
+        {
+            SqlDataAdapter dap = new SqlDataAdapter(sql, Con);
+            DataTable table = new DataTable();
+            dap.Fill(table);
+            if (table.Rows.Count > 0)
+                return true;
+            else return false;
+        }
+        //Hàm thực hiện câu lệnh SQL
+        public static void RunSQL(string sql)
+        {
+            SqlCommand cmd; //Đối tượng thuộc lớp SqlCommand
+            cmd = new SqlCommand();
+            cmd.Connection = Con; //Gán kết nối
+            cmd.CommandText = sql; //Gán lệnh SQL
+            try
+            {
+                cmd.ExecuteNonQuery(); //Thực hiện câu lệnh SQL
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            cmd.Dispose();//Giải phóng bộ nhớ
+            cmd = null;
+        }
+
+
     }
 }
