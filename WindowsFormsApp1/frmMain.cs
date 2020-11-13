@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public frmMain()
         {
             InitializeComponent();
+            IsMdiContainer = true;
             //loadLabel();
         }
         //void loadLabel()
@@ -61,12 +62,14 @@ namespace WindowsFormsApp1
         private void mnuNhanVien_Click(object sender, EventArgs e)
         {
             frmNhanVien frm = new frmNhanVien();
+            frm.MdiParent = this;
             frm.Show();
         }
 
         private void mnuKhachHang_Click(object sender, EventArgs e)
         {
             KhachHang frm = new KhachHang();
+            frm.MdiParent = this;
             frm.Show();
         }
 

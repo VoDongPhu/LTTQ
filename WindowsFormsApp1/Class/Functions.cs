@@ -75,6 +75,19 @@ namespace WindowsFormsApp1.Class
             cmd = null;
         }
 
+        public static bool IsDate(string date)
+        {
+            string[] elements = date.Split('/');
+            if ((Convert.ToInt32(elements[0]) >= 1) && (Convert.ToInt32(elements[0]) <= 31) && (Convert.ToInt32(elements[1]) >= 1) && (Convert.ToInt32(elements[1]) <= 12) && (Convert.ToInt32(elements[2]) >= 1900))
+                return true;
+            else return false;
+        }
+        public static string ConvertDateTime(string date)
+        {
+            string[] elements = date.Split('/');
+            string dt = string.Format("{0}/{1}/{2}", elements[0], elements[1], elements[2]);
+            return dt;
+        }
 
     }
 }

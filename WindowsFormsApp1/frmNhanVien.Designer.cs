@@ -257,6 +257,7 @@
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(172, 22);
             this.txtMaNV.TabIndex = 2;
+            this.txtMaNV.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMaNV_KeyUp);
             // 
             // label4
             // 
@@ -302,6 +303,7 @@
             this.label1.Size = new System.Drawing.Size(234, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh Mục Nhân Viên";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgvNhanVien
             // 
@@ -313,7 +315,8 @@
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.Size = new System.Drawing.Size(884, 166);
             this.dgvNhanVien.TabIndex = 1;
-            this.dgvNhanVien.Click += new System.EventHandler(this.dgvNhanVien_Click);
+            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
+          
             // 
             // frmNhanVien
             // 
