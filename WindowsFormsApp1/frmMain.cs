@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public frmMain()
         {
             InitializeComponent();
+            IsMdiContainer = true;
             //loadLabel();
         }
         //void loadLabel()

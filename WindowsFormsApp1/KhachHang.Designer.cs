@@ -35,13 +35,12 @@
             this.btnBoQua = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.frmKhachHang = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.mtbDienThoai = new System.Windows.Forms.MaskedTextBox();
+            this.chkGioiTinhKhach = new System.Windows.Forms.CheckBox();
+            this.NgSinhKhach = new System.Windows.Forms.DateTimePicker();
+            this.txtTenKhach = new System.Windows.Forms.TextBox();
+            this.txtMaKhach = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,11 +52,10 @@
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.txtSoDiem = new System.Windows.Forms.TextBox();
-            this.NgSinhKH = new System.Windows.Forms.DateTimePicker();
-            this.SDTKH = new System.Windows.Forms.MaskedTextBox();
+            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.frmKhachHang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,6 +80,7 @@
             this.btnDong.TabIndex = 17;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnThem
             // 
@@ -91,6 +90,7 @@
             this.btnThem.TabIndex = 12;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -100,6 +100,7 @@
             this.btnXoa.TabIndex = 13;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnBoQua
             // 
@@ -109,6 +110,7 @@
             this.btnBoQua.TabIndex = 16;
             this.btnBoQua.Text = "Bỏ qua";
             this.btnBoQua.UseVisualStyleBackColor = true;
+            this.btnBoQua.Click += new System.EventHandler(this.btnBoQua_Click);
             // 
             // btnSua
             // 
@@ -118,6 +120,7 @@
             this.btnSua.TabIndex = 14;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLuu
             // 
@@ -127,28 +130,16 @@
             this.btnLuu.TabIndex = 15;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
-            // 
-            // dgvKhachHang
-            // 
-            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvKhachHang.Location = new System.Drawing.Point(0, 0);
-            this.dgvKhachHang.Name = "dgvKhachHang";
-            this.dgvKhachHang.RowHeadersWidth = 51;
-            this.dgvKhachHang.RowTemplate.Height = 24;
-            this.dgvKhachHang.Size = new System.Drawing.Size(894, 389);
-            this.dgvKhachHang.TabIndex = 1;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // frmKhachHang
             // 
             this.frmKhachHang.BackColor = System.Drawing.SystemColors.Control;
-            this.frmKhachHang.Controls.Add(this.SDTKH);
-            this.frmKhachHang.Controls.Add(this.NgSinhKH);
-            this.frmKhachHang.Controls.Add(this.textBox6);
-            this.frmKhachHang.Controls.Add(this.textBox5);
-            this.frmKhachHang.Controls.Add(this.textBox4);
-            this.frmKhachHang.Controls.Add(this.textBox3);
-            this.frmKhachHang.Controls.Add(this.label8);
+            this.frmKhachHang.Controls.Add(this.mtbDienThoai);
+            this.frmKhachHang.Controls.Add(this.chkGioiTinhKhach);
+            this.frmKhachHang.Controls.Add(this.NgSinhKhach);
+            this.frmKhachHang.Controls.Add(this.txtTenKhach);
+            this.frmKhachHang.Controls.Add(this.txtMaKhach);
             this.frmKhachHang.Controls.Add(this.label7);
             this.frmKhachHang.Controls.Add(this.label6);
             this.frmKhachHang.Controls.Add(this.label5);
@@ -160,49 +151,57 @@
             this.frmKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frmKhachHang.Location = new System.Drawing.Point(0, 0);
             this.frmKhachHang.Name = "frmKhachHang";
-            this.frmKhachHang.Size = new System.Drawing.Size(894, 200);
+            this.frmKhachHang.Size = new System.Drawing.Size(894, 214);
             this.frmKhachHang.TabIndex = 2;
             this.frmKhachHang.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // textBox6
+            // mtbDienThoai
             // 
-            this.textBox6.Location = new System.Drawing.Point(670, 153);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(182, 26);
-            this.textBox6.TabIndex = 18;
+            this.mtbDienThoai.Location = new System.Drawing.Point(670, 99);
+            this.mtbDienThoai.Mask = "(999) 000-0000";
+            this.mtbDienThoai.Name = "mtbDienThoai";
+            this.mtbDienThoai.Size = new System.Drawing.Size(176, 26);
+            this.mtbDienThoai.TabIndex = 22;
+            this.mtbDienThoai.KeyUp += new System.Windows.Forms.KeyEventHandler(this.mtbDienThoai_KeyUp);
             // 
-            // textBox5
+            // chkGioiTinhKhach
             // 
-            this.textBox5.Location = new System.Drawing.Point(211, 151);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 26);
-            this.textBox5.TabIndex = 17;
+            this.chkGioiTinhKhach.AutoSize = true;
+            this.chkGioiTinhKhach.Checked = true;
+            this.chkGioiTinhKhach.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkGioiTinhKhach.Location = new System.Drawing.Point(211, 149);
+            this.chkGioiTinhKhach.Name = "chkGioiTinhKhach";
+            this.chkGioiTinhKhach.Size = new System.Drawing.Size(66, 24);
+            this.chkGioiTinhKhach.TabIndex = 21;
+            this.chkGioiTinhKhach.Text = "Nam";
+            this.chkGioiTinhKhach.UseVisualStyleBackColor = true;
+            this.chkGioiTinhKhach.KeyUp += new System.Windows.Forms.KeyEventHandler(this.chkGioiTinhKhach_KeyUp);
             // 
-            // textBox4
+            // NgSinhKhach
             // 
-            this.textBox4.Location = new System.Drawing.Point(211, 101);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 26);
-            this.textBox4.TabIndex = 16;
+            this.NgSinhKhach.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.NgSinhKhach.Location = new System.Drawing.Point(670, 51);
+            this.NgSinhKhach.Name = "NgSinhKhach";
+            this.NgSinhKhach.Size = new System.Drawing.Size(182, 26);
+            this.NgSinhKhach.TabIndex = 19;
+            this.NgSinhKhach.KeyUp += new System.Windows.Forms.KeyEventHandler(this.NgSinhKhach_KeyUp);
             // 
-            // textBox3
+            // txtTenKhach
             // 
-            this.textBox3.Location = new System.Drawing.Point(211, 51);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 26);
-            this.textBox3.TabIndex = 15;
+            this.txtTenKhach.Location = new System.Drawing.Point(211, 101);
+            this.txtTenKhach.Name = "txtTenKhach";
+            this.txtTenKhach.Size = new System.Drawing.Size(167, 26);
+            this.txtTenKhach.TabIndex = 16;
+            this.txtTenKhach.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtTenKhach_KeyUp);
             // 
-            // label8
+            // txtMaKhach
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(451, 153);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 20);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Số điểm";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.txtMaKhach.Location = new System.Drawing.Point(211, 51);
+            this.txtMaKhach.Name = "txtMaKhach";
+            this.txtMaKhach.Size = new System.Drawing.Size(167, 26);
+            this.txtMaKhach.TabIndex = 15;
+            this.txtMaKhach.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtMaKhach.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMaKhach_KeyUp);
             // 
             // label7
             // 
@@ -279,6 +278,7 @@
             this.label1.Size = new System.Drawing.Size(253, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh Mục Khách Hàng";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // chkGioiTinhKH
             // 
@@ -313,45 +313,41 @@
             this.txtSoDiem.Size = new System.Drawing.Size(200, 22);
             this.txtSoDiem.TabIndex = 16;
             // 
-            // NgSinhKH
+            // dgvKhachHang
             // 
-            this.NgSinhKH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.NgSinhKH.Location = new System.Drawing.Point(670, 51);
-            this.NgSinhKH.Name = "NgSinhKH";
-            this.NgSinhKH.Size = new System.Drawing.Size(182, 26);
-            this.NgSinhKH.TabIndex = 19;
-            // 
-            // SDTKH
-            // 
-            this.SDTKH.Location = new System.Drawing.Point(670, 102);
-            this.SDTKH.Mask = "(999) 000-0000";
-            this.SDTKH.Name = "SDTKH";
-            this.SDTKH.Size = new System.Drawing.Size(182, 26);
-            this.SDTKH.TabIndex = 20;
+            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvKhachHang.Location = new System.Drawing.Point(0, 214);
+            this.dgvKhachHang.Name = "dgvKhachHang";
+            this.dgvKhachHang.RowHeadersWidth = 51;
+            this.dgvKhachHang.RowTemplate.Height = 24;
+            this.dgvKhachHang.Size = new System.Drawing.Size(894, 175);
+            this.dgvKhachHang.TabIndex = 3;
+            this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
             // 
             // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 450);
-            this.Controls.Add(this.frmKhachHang);
             this.Controls.Add(this.dgvKhachHang);
+            this.Controls.Add(this.frmKhachHang);
             this.Controls.Add(this.panel1);
             this.Name = "KhachHang";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Danh mục khách hàng";
+            this.Load += new System.EventHandler(this.KhachHang_Load_1);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.frmKhachHang.ResumeLayout(false);
             this.frmKhachHang.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgvKhachHang;
         private System.Windows.Forms.Panel frmKhachHang;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -368,14 +364,13 @@
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox chkGioiTinhKH;
         private System.Windows.Forms.TextBox txtSoDiem;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DateTimePicker NgSinhKH;
-        private System.Windows.Forms.MaskedTextBox SDTKH;
+        private System.Windows.Forms.TextBox txtTenKhach;
+        private System.Windows.Forms.TextBox txtMaKhach;
+        private System.Windows.Forms.DateTimePicker NgSinhKhach;
+        private System.Windows.Forms.CheckBox chkGioiTinhKhach;
+        private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.MaskedTextBox mtbDienThoai;
     }
 }

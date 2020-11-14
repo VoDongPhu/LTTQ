@@ -61,31 +61,31 @@ namespace WindowsFormsApp1
 
         }
 
-        private void dgvNhanVien_Click(object sender, EventArgs e)
-        {
-            if (btnThem.Enabled == false)
-            {
-                MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtMaNV.Focus();
-                return;
-            }
-            if (tblNhanVien.Rows.Count == 0)
-            {
-                MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            txtMaNV.Text = dgvNhanVien.CurrentRow.Cells["MaNhanVien"].Value.ToString();
-            txtTenNV.Text = dgvNhanVien.CurrentRow.Cells["TenNhanVien"].Value.ToString();
-            if (dgvNhanVien.CurrentRow.Cells["GioiTinhNhanVien"].Value.ToString() == "Nam") chkGioiTinhNV.Checked = true;
-            else chkGioiTinhNV.Checked = false;
-            txtMatKhau.Text = dgvNhanVien.CurrentRow.Cells["MatKhau"].Value.ToString();
-            SDTNV.Text = dgvNhanVien.CurrentRow.Cells["SoDTNhanVien"].Value.ToString();
-            NgSinhNV.Value = (DateTime)dgvNhanVien.CurrentRow.Cells["NgSinhNhanVien"].Value;
-            NgVaoLam.Value = (DateTime)dgvNhanVien.CurrentRow.Cells["NgayVaoLam"].Value;
-            btnSua.Enabled = true;
-            btnXoa.Enabled = true;
-            btnXoa.Enabled = true;
-        }
+        //private void dgvNhanVien_Click(object sender, EventArgs e)
+        //{
+        //    if (btnThem.Enabled == false)
+        //    {
+        //        MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //        txtMaNV.Focus();
+        //        return;
+        //    }
+        //    if (tblNhanVien.Rows.Count == 0)
+        //    {
+        //        MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //        return;
+        //    }
+        //    txtMaNV.Text = dgvNhanVien.CurrentRow.Cells["MaNhanVien"].Value.ToString();
+        //    txtTenNV.Text = dgvNhanVien.CurrentRow.Cells["TenNhanVien"].Value.ToString();
+        //    if (dgvNhanVien.CurrentRow.Cells["GioiTinhNhanVien"].Value.ToString() == "Nam") chkGioiTinhNV.Checked = true;
+        //    else chkGioiTinhNV.Checked = false;
+        //    txtMatKhau.Text = dgvNhanVien.CurrentRow.Cells["MatKhau"].Value.ToString();
+        //    SDTNV.Text = dgvNhanVien.CurrentRow.Cells["SoDTNhanVien"].Value.ToString();
+        //    NgSinhNV.Value = (DateTime)dgvNhanVien.CurrentRow.Cells["NgSinhNhanVien"].Value;
+        //    NgVaoLam.Value = (DateTime)dgvNhanVien.CurrentRow.Cells["NgayVaoLam"].Value;
+        //    btnSua.Enabled = true;
+        //    btnXoa.Enabled = true;
+        //    btnXoa.Enabled = true;
+        //}
 
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -244,6 +244,43 @@ namespace WindowsFormsApp1
         private void btnDong_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMaNV_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                SendKeys.Send("{TAB}");
+        }
+
+        private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (btnThem.Enabled == false)
+            {
+                MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtMaNV.Focus();
+                return;
+            }
+            if (tblNhanVien.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            txtMaNV.Text = dgvNhanVien.CurrentRow.Cells["MaNhanVien"].Value.ToString();
+            txtTenNV.Text = dgvNhanVien.CurrentRow.Cells["TenNhanVien"].Value.ToString();
+            if (dgvNhanVien.CurrentRow.Cells["GioiTinhNhanVien"].Value.ToString() == "Nam") chkGioiTinhNV.Checked = true;
+            else chkGioiTinhNV.Checked = false;
+            txtMatKhau.Text = dgvNhanVien.CurrentRow.Cells["MatKhau"].Value.ToString();
+            SDTNV.Text = dgvNhanVien.CurrentRow.Cells["SoDTNhanVien"].Value.ToString();
+            NgSinhNV.Value = (DateTime)dgvNhanVien.CurrentRow.Cells["NgSinhNhanVien"].Value;
+            NgVaoLam.Value = (DateTime)dgvNhanVien.CurrentRow.Cells["NgayVaoLam"].Value;
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+            btnXoa.Enabled = true;
         }
     }
 }
