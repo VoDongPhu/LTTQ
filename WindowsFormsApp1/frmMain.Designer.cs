@@ -103,21 +103,21 @@
             // mnuNhanVien
             // 
             this.mnuNhanVien.Name = "mnuNhanVien";
-            this.mnuNhanVien.Size = new System.Drawing.Size(224, 28);
+            this.mnuNhanVien.Size = new System.Drawing.Size(185, 28);
             this.mnuNhanVien.Text = "&Nhân viên";
             this.mnuNhanVien.Click += new System.EventHandler(this.mnuNhanVien_Click);
             // 
             // mnuKhachHang
             // 
             this.mnuKhachHang.Name = "mnuKhachHang";
-            this.mnuKhachHang.Size = new System.Drawing.Size(224, 28);
+            this.mnuKhachHang.Size = new System.Drawing.Size(185, 28);
             this.mnuKhachHang.Text = "&Khách hàng";
             this.mnuKhachHang.Click += new System.EventHandler(this.mnuKhachHang_Click);
             // 
             // mnuSanPham
             // 
             this.mnuSanPham.Name = "mnuSanPham";
-            this.mnuSanPham.Size = new System.Drawing.Size(224, 28);
+            this.mnuSanPham.Size = new System.Drawing.Size(185, 28);
             this.mnuSanPham.Text = "&Sản Phẩm";
             this.mnuSanPham.Click += new System.EventHandler(this.mnuSanPham_Click);
             // 
@@ -148,19 +148,20 @@
             // mnuuFindHoaDon
             // 
             this.mnuuFindHoaDon.Name = "mnuuFindHoaDon";
-            this.mnuuFindHoaDon.Size = new System.Drawing.Size(185, 28);
+            this.mnuuFindHoaDon.Size = new System.Drawing.Size(224, 28);
             this.mnuuFindHoaDon.Text = "Hóa đơn";
+            this.mnuuFindHoaDon.Click += new System.EventHandler(this.mnuuFindHoaDon_Click);
             // 
             // mnuFindHang
             // 
             this.mnuFindHang.Name = "mnuFindHang";
-            this.mnuFindHang.Size = new System.Drawing.Size(185, 28);
+            this.mnuFindHang.Size = new System.Drawing.Size(224, 28);
             this.mnuFindHang.Text = "Sản phẩm";
             // 
             // mnuFindKhachHhang
             // 
             this.mnuFindKhachHhang.Name = "mnuFindKhachHhang";
-            this.mnuFindKhachHhang.Size = new System.Drawing.Size(185, 28);
+            this.mnuFindKhachHhang.Size = new System.Drawing.Size(224, 28);
             this.mnuFindKhachHhang.Text = "Khách hàng";
             // 
             // mnuBaoCao

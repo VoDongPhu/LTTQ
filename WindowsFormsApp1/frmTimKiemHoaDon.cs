@@ -67,10 +67,10 @@ namespace WindowsFormsApp1
         }
         private void LoadDataGridView()
         {
-            dgvTKHoaDon.Columns[0].HeaderText = "Mã HĐB";
+            dgvTKHoaDon.Columns[0].HeaderText = "Mã hóa đơn";
             dgvTKHoaDon.Columns[1].HeaderText = "Mã nhân viên";
             dgvTKHoaDon.Columns[2].HeaderText = "Ngày bán";
-            dgvTKHoaDon.Columns[3].HeaderText = "Mã khách";
+            dgvTKHoaDon.Columns[3].HeaderText = "Mã khách hàng";
             dgvTKHoaDon.Columns[4].HeaderText = "Tổng tiền";
             dgvTKHoaDon.Columns[0].Width = 150;
             dgvTKHoaDon.Columns[1].Width = 100;
