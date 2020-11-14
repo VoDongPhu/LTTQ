@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using System.Windows.Forms;
+using System.Windows.Forms; //Sử dụng đối tượng MessageBox
 
 namespace WindowsFormsApp1.Class
 {
@@ -41,12 +41,12 @@ namespace WindowsFormsApp1.Class
         }
         public static DataTable GetDataToTable(string sql)
         {
-            SqlDataAdapter dap = new SqlDataAdapter(sql,Con);// Định nghĩa đối tượng thuộc lớp SqlDataAdapter
+            SqlDataAdapter dap = new SqlDataAdapter(sql, Con);// Định nghĩa đối tượng thuộc lớp SqlDataAdapter
             DataTable table = new DataTable();
             dap.Fill(table);
             return table;
         }
-        public static bool CheckKey(string sql)// HHàm kiểm tra khóa trùng
+        public static bool CheckKey(string sql)// Hàm kiểm tra khóa trùng
         {
             SqlDataAdapter dap = new SqlDataAdapter(sql, Con);
             DataTable table = new DataTable();
@@ -74,8 +74,24 @@ namespace WindowsFormsApp1.Class
             cmd = null;
         }
 
-<<<<<<< HEAD
-        // Trả về đường dẫn của ảnh
+        public static void RunSqlDel(string sql)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Functions.Con;
+            cmd.CommandText = sql;
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Dữ liệu đang được dùng, không thể xoá...", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(ex.ToString());
+            }
+            cmd.Dispose();
+            cmd = null;
+        }
+
         public static void FillCombo(string sql, ComboBox cbo, string ma, string ten)
         {
             SqlDataAdapter dap = new SqlDataAdapter(sql, Con);
@@ -95,7 +111,7 @@ namespace WindowsFormsApp1.Class
                 ma = reader.GetValue(0).ToString();
             reader.Close();
             return ma;
-=======
+        }
         public static bool IsDate(string date)
         {
             string[] elements = date.Split('/');
@@ -108,7 +124,6 @@ namespace WindowsFormsApp1.Class
             string[] elements = date.Split('/');
             string dt = string.Format("{0}/{1}/{2}", elements[0], elements[1], elements[2]);
             return dt;
->>>>>>> cd160b4fedfde81812646808f835ed2437217f16
         }
 
     }

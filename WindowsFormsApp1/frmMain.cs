@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
             Class.Functions.Connect();
             this.IsMdiContainer = true;
         }
-      
+
         private void toolStripTextBox1_Click(object sender, EventArgs e)
         {
 
@@ -94,6 +94,13 @@ namespace WindowsFormsApp1
         private void mnuuFindHoaDon_Click(object sender, EventArgs e)
         {
             frmTimKiemHoaDon frm = new frmTimKiemHoaDon();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void mnuHoaDonBan_Click(object sender, EventArgs e)
+        {
+            frmHoaDon frm = new frmHoaDon();
             frm.MdiParent = this;
             frm.Show();
         }

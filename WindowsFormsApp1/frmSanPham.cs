@@ -19,15 +19,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
-        
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+              
         private void ResetValues()
-        {         
+        {
+            txtMaSP.Text = "";
+            txtTenSP.Text = "";
             txtSoLuong.Text = "0";
             txtDonGiaNhap.Text = "0";
             txtDonGiaBan.Text = "0";
@@ -41,7 +37,7 @@ namespace WindowsFormsApp1
         private void LoadDataGridView()
         {
             string sql;
-            sql = "SELECT * from tblHang";
+            sql = "SELECT * from tblSanPham";
             tblSanPham = Functions.GetDataToTable(sql);
             dgvSanPham.DataSource = tblSanPham;
             dgvSanPham.Columns[0].HeaderText = "Mã sản phẩm";
@@ -64,7 +60,10 @@ namespace WindowsFormsApp1
         // Khởi tạo giá trị
         private void frmSanPham_Load(object sender, EventArgs e)
         {
-
+            txtMaSP.Enabled = false;
+            btnLuu.Enabled = false;
+            btnBoQua.Enabled = false;
+            LoadDataGridView();
         }
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -85,16 +84,16 @@ namespace WindowsFormsApp1
             txtSoLuong.Text = dgvSanPham.CurrentRow.Cells["SoLuong"].Value.ToString();
             txtDonGiaNhap.Text = dgvSanPham.CurrentRow.Cells["DonGiaNhap"].Value.ToString();
             txtDonGiaBan.Text = dgvSanPham.CurrentRow.Cells["DonGiaBan"].Value.ToString();
-            sql = "SELECT Anh FROM tblSanPham WHERE MaSP=N'" + txtMaSP.Text + "'";
+            sql = "SELECT Anh FROM tblSanPham WHERE MaSanPham=N'" + txtMaSP.Text + "'";
             txtAnh.Text = Functions.GetFieldValues(sql);
             picAnh.Image = Image.FromFile(txtAnh.Text); //load ảnh từ đường dẫn
-            sql = "SELECT Ghichu FROM tblHang WHERE MaHang = N'" + txtMaSP.Text + "'";
+            sql = "SELECT GhiChu FROM tblSanPham WHERE MaSanPham = N'" + txtMaSP.Text + "'";
             txtGhiChu.Text = Functions.GetFieldValues(sql);
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
             btnBoQua.Enabled = true;
         }
-
+       
         private void btnThem_Click(object sender, EventArgs e)
         {
             btnSua.Enabled = false;
@@ -131,14 +130,14 @@ namespace WindowsFormsApp1
                 btnMo.Focus();
                 return;
             }
-            sql = "SELECT MaHang FROM tblHang WHERE MaHang=N'" + txtMaSP.Text.Trim() + "'";
+            sql = "SELECT MaSanPham FROM tblSanPham WHERE MaSanPham=N'" + txtMaSP.Text.Trim() + "'";
             if (Functions.CheckKey(sql)) //Kiểm tra mã hàng trùng
             {
                 MessageBox.Show("Mã hàng này đã tồn tại, bạn phải chọn mã hàng khác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtMaSP.Focus();
                 return;
             }
-            sql = "INSERT INTO tblHang(MaHang,TenHang,SoLuong,DonGiaNhap, DonGiaBan,Anh,Ghichu) VALUES(N'"
+            sql = "INSERT INTO tblSanPham(MaSanPham,TenSanPham,SoLuong,DonGiaNhap, DonGiaBan,Anh,GhiChu) VALUES(N'"
                 + txtMaSP.Text.Trim() + "',N'" + txtTenSP.Text.Trim() +                
                 "'," + txtSoLuong.Text.Trim() + "," + txtDonGiaNhap.Text +
                 "," + txtDonGiaBan.Text + ",'" + txtAnh.Text + "',N'" + txtGhiChu.Text.Trim() + "')";
@@ -175,7 +174,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Không còn dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (txtMaSP.Text == "")
+            if (txtMaSP.Text == "") //Kiểm tra ô nhập có trống hay không
             {
                 MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtMaSP.Focus();
@@ -193,14 +192,80 @@ namespace WindowsFormsApp1
                 txtAnh.Focus();
                 return;
             }
-            sql = "UPDATE tblHang SET TenHang=N'" + txtTenSP.Text.Trim().ToString() +
-                "',MaChatLieu=N'" + 
+            sql = "UPDATE tblSanPham SET TenSanPham=N'" + txtTenSP.Text.Trim().ToString() +           
                 "',SoLuong=" + txtSoLuong.Text +
-                ",Anh='" + txtAnh.Text + "',Ghichu=N'" + txtGhiChu.Text + "' WHERE MaHang=N'" + txtMaSP.Text + "'";
+                ",Anh='" + txtAnh.Text + "',GhiChu=N'" + txtGhiChu.Text + "' WHERE MaSanPham=N'" + txtMaSP.Text + "'";
             Functions.RunSQL(sql);
             LoadDataGridView();
             ResetValues();
             btnBoQua.Enabled = false;
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            string sql;
+            if (tblSanPham.Rows.Count == 0)
+            {
+                MessageBox.Show("Không còn dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txtMaSP.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (MessageBox.Show("Bạn có muốn xoá bản ghi này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                sql = "DELETE tblSanPham WHERE MaSanPham=N'" + txtMaSP.Text + "'";
+                Functions.RunSQL(sql);
+                LoadDataGridView();
+                ResetValues();
+            }
+        }
+
+        private void btnBoQua_Click(object sender, EventArgs e)
+        {
+            ResetValues();
+            btnXoa.Enabled = true;
+            btnSua.Enabled = true;
+            btnThem.Enabled = true;
+            btnBoQua.Enabled = false;
+            btnLuu.Enabled = false;
+            txtMaSP.Enabled = false;
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string sql;
+            if ((txtMaSP.Text == "") && (txtTenSP.Text == ""))
+            {
+                MessageBox.Show("Bạn hãy nhập điều kiện tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            sql = "SELECT * from tblSanPham WHERE 1=1";
+            if (txtMaSP.Text != "")
+                sql += " AND MaSanPham LIKE N'%" + txtMaSP.Text + "%'";
+            if (txtTenSP.Text != "")
+                sql += " AND TenSanPham LIKE N'%" + txtTenSP.Text + "%'";
+            tblSanPham = Functions.GetDataToTable(sql);
+            if (tblSanPham.Rows.Count == 0)
+                MessageBox.Show("Không có bản ghi thoả mãn điều kiện tìm kiếm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else MessageBox.Show("Có " + tblSanPham.Rows.Count + "  bản ghi thoả mãn điều kiện!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            dgvSanPham.DataSource = tblSanPham;
+            ResetValues();
+        }
+
+        private void btnHienThiDS_Click(object sender, EventArgs e)
+        {
+            string sql;
+            sql = "SELECT MaSanPham,TenSanPham,SoLuong,DonGiaNhap,DonGiaBan,Anh,GhiChu FROM tblSanPham";
+            tblSanPham = Functions.GetDataToTable(sql);
+            dgvSanPham.DataSource = tblSanPham;
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

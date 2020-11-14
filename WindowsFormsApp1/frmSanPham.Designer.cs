@@ -203,6 +203,7 @@
             this.picAnh.Location = new System.Drawing.Point(753, 38);
             this.picAnh.Name = "picAnh";
             this.picAnh.Size = new System.Drawing.Size(161, 170);
+            this.picAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAnh.TabIndex = 14;
             this.picAnh.TabStop = false;
             // 
@@ -212,7 +213,6 @@
             this.txtDonGiaBan.Name = "txtDonGiaBan";
             this.txtDonGiaBan.Size = new System.Drawing.Size(159, 22);
             this.txtDonGiaBan.TabIndex = 11;
-            this.txtDonGiaBan.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // txtDonGiaNhap
             // 
@@ -270,6 +270,7 @@
             this.btnHienThiDS.TabIndex = 25;
             this.btnHienThiDS.Text = "Hiển thị DS";
             this.btnHienThiDS.UseVisualStyleBackColor = true;
+            this.btnHienThiDS.Click += new System.EventHandler(this.btnHienThiDS_Click);
             // 
             // btnTimKiem
             // 
@@ -279,6 +280,7 @@
             this.btnTimKiem.TabIndex = 24;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnDong
             // 
@@ -288,6 +290,7 @@
             this.btnDong.TabIndex = 23;
             this.btnDong.Text = "&Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnThem
             // 
@@ -307,6 +310,7 @@
             this.btnXoa.TabIndex = 19;
             this.btnXoa.Text = "&Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnBoQua
             // 
@@ -316,6 +320,7 @@
             this.btnBoQua.TabIndex = 22;
             this.btnBoQua.Text = "&Bỏ qua";
             this.btnBoQua.UseVisualStyleBackColor = true;
+            this.btnBoQua.Click += new System.EventHandler(this.btnBoQua_Click);
             // 
             // btnSua
             // 
