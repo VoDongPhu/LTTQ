@@ -99,3 +99,9 @@ C:\Users\TUAN\Desktop\LTTQ2\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Pro
 C:\Users\TUAN\Desktop\LTTQ2\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
 C:\Users\TUAN\Desktop\LTTQ2\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\TUAN\Desktop\LTTQ2\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\bin\Debug\System.Windows.Forms.Ribbon.dll
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\bin\Debug\itextsharp.dll
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\bin\Debug\itextsharp.xml
+C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmExport.resources

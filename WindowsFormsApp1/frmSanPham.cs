@@ -267,5 +267,11 @@ namespace WindowsFormsApp1
         {
             this.Close();
         }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            frmExport frm = new frmExport();
+            frm.ShowDialog();
+        }
     }
 }

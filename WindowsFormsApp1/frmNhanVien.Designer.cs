@@ -53,6 +53,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.chkNu = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -134,6 +135,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.chkNu);
             this.panel2.Controls.Add(this.NgVaoLam);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.NgSinhNV);
@@ -196,7 +198,6 @@
             this.SDTNV.Name = "SDTNV";
             this.SDTNV.Size = new System.Drawing.Size(176, 22);
             this.SDTNV.TabIndex = 10;
-            this.SDTNV.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.SDTNV_MaskInputRejected);
             // 
             // label7
             // 
@@ -317,6 +318,16 @@
             this.dgvNhanVien.TabIndex = 1;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
+            // chkNu
+            // 
+            this.chkNu.AutoSize = true;
+            this.chkNu.Location = new System.Drawing.Point(255, 151);
+            this.chkNu.Name = "chkNu";
+            this.chkNu.Size = new System.Drawing.Size(48, 21);
+            this.chkNu.TabIndex = 15;
+            this.chkNu.Text = "Nữ";
+            this.chkNu.UseVisualStyleBackColor = true;
+            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -331,7 +342,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Danh mục nhân viên";
             this.Load += new System.EventHandler(this.frmNhanVien_Load);
-            this.Click += new System.EventHandler(this.frmNhanVien_Click);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -366,5 +376,6 @@
         private System.Windows.Forms.DateTimePicker NgSinhNV;
         private System.Windows.Forms.DateTimePicker NgVaoLam;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox chkNu;
     }
 }
