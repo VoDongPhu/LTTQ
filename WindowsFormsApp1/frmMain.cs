@@ -84,25 +84,24 @@ namespace WindowsFormsApp1
             frm.MdiParent = this;
             frm.Show();
         }
-        private void mnuTimKiemHoaDon_Click(object sender, EventArgs e)
-        {
-            frmTimKiemHoaDon frm = new frmTimKiemHoaDon();
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
-        private void mnuuFindHoaDon_Click(object sender, EventArgs e)
-        {
-            frmTimKiemHoaDon frm = new frmTimKiemHoaDon();
-            frm.MdiParent = this;
-            frm.Show();
-        }
+        
+        
 
         private void mnuHoaDonBan_Click(object sender, EventArgs e)
         {
             frmHoaDon frm = new frmHoaDon();
             frm.MdiParent = this;
             frm.Show();
+        }
+        private void mnuTimKiem_Click(object sender, EventArgs e)
+        {
+            frmTimKiemHoaDon frm = new frmTimKiemHoaDon();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+        private void mnuHangNhap_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
