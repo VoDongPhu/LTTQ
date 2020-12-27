@@ -57,6 +57,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
+            this.btnPDF = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
             this.panel2.SuspendLayout();
@@ -65,6 +66,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnPDF);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label9);
@@ -185,7 +187,7 @@
             // 
             this.btnMo.Location = new System.Drawing.Point(678, 38);
             this.btnMo.Name = "btnMo";
-            this.btnMo.Size = new System.Drawing.Size(69, 23);
+            this.btnMo.Size = new System.Drawing.Size(69, 31);
             this.btnMo.TabIndex = 17;
             this.btnMo.Text = "Mở";
             this.btnMo.UseVisualStyleBackColor = true;
@@ -354,6 +356,16 @@
             this.dgvSanPham.TabIndex = 1;
             this.dgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
             // 
+            // btnPDF
+            // 
+            this.btnPDF.Location = new System.Drawing.Point(883, 3);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(75, 29);
+            this.btnPDF.TabIndex = 20;
+            this.btnPDF.Text = "PDF";
+            this.btnPDF.UseVisualStyleBackColor = true;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
             // frmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -407,5 +419,6 @@
         private System.Windows.Forms.TextBox txtAnh;
         private System.Windows.Forms.Button btnHienThiDS;
         private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.Button btnPDF;
     }
 }

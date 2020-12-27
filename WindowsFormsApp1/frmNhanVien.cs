@@ -51,16 +51,6 @@ namespace WindowsFormsApp1
             LoadDataGridView();
         }
 
-        private void frmNhanVien_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SDTNV_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
         //private void dgvNhanVien_Click(object sender, EventArgs e)
         //{
         //    if (btnThem.Enabled == false)
