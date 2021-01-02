@@ -106,5 +106,11 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Không có bản ghi nào được Export!", "Info");
             }
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                this.Close();
+        }
     }
 }

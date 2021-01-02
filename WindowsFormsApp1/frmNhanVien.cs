@@ -233,7 +233,8 @@ namespace WindowsFormsApp1
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if(MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                this.Close();
         }
 
         private void txtMaNV_KeyUp(object sender, KeyEventArgs e)

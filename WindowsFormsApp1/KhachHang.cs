@@ -226,41 +226,7 @@ namespace WindowsFormsApp1
                 ResetValues();
             }
         }
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDong_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void dgvKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+               
         private void btnBoQua_Click(object sender, EventArgs e)
         {
             ResetValues();
@@ -300,6 +266,12 @@ namespace WindowsFormsApp1
         {
             if (e.KeyCode == Keys.Enter)
                 SendKeys.Send("{TAB}");
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                this.Close();
         }
     }
 }

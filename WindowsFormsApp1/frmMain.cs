@@ -15,130 +15,52 @@ namespace WindowsFormsApp1
         public frmMain()
         {
             InitializeComponent();
-            IsMdiContainer = true;
-        }          
-
-        //private void Form1_Load(object sender, EventArgs e)
-        //{
-        //    Class.Functions.Connect();
-        //    this.IsMdiContainer = true;
-        //}
-       
-        //private void mnuThoat_Click(object sender, EventArgs e)
-        //{
-        //    Class.Functions.Disconnect();
-        //    Application.Exit();
-        //}
-
-        //private void mnuNhanVien_Click(object sender, EventArgs e)
-        //{
-        //    frmNhanVien frm = new frmNhanVien();
-        //    frm.MdiParent = this;
-        //    frm.Show();
-        //}
-
-        //private void mnuKhachHang_Click(object sender, EventArgs e)
-        //{
-        //    KhachHang frm = new KhachHang();
-        //    frm.MdiParent = this;
-        //    frm.Show();
-        //}
-
-        //private void mnuSanPham_Click(object sender, EventArgs e)
-        //{
-        //    frmSanPham frm = new frmSanPham();
-        //    frm.MdiParent = this;
-        //    frm.Show();
-        //}
-        //private void mnuHoaDon_Click(object sender, EventArgs e)
-        //{
-        //    frmHoaDon frm = new frmHoaDon();
-        //    frm.MdiParent = this;
-        //    frm.Show();
-        //}
-        //private void mnuTimKiemHoaDon_Click(object sender, EventArgs e)
-        //{
-        //    frmTimKiemHoaDon frm = new frmTimKiemHoaDon();
-        //    frm.MdiParent = this;
-        //    frm.Show();
-        //}
-
-        //private void mnuuFindHoaDon_Click(object sender, EventArgs e)
-        //{
-        //    frmTimKiemHoaDon frm = new frmTimKiemHoaDon();
-        //    frm.MdiParent = this;
-        //    frm.Show();
-        //}
-
-        //private void mnuHoaDonBan_Click(object sender, EventArgs e)
-        //{
-        //    frmHoaDon frm = new frmHoaDon();
-        //    frm.MdiParent = this;
-        //    frm.Show();
-        //}
-
-        private void ribbonExit_Click(object sender, EventArgs e)
-        {
-            Class.Functions.Disconnect();
-            Application.Exit();
         }
 
-        private void ribbonCustomer_Click(object sender, EventArgs e)
+        private void mnuThoat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+                Class.Functions.Disconnect(); //Đóng kết nối
+                Application.Exit(); //Thoát
+            }
+
+        }
+
+        private void mnuKhachHang_Click(object sender, EventArgs e)
         {
             KhachHang frm = new KhachHang();
-            frm.MdiParent = this;
-            frm.Show();
+            frm.ShowDialog();
         }
 
-        private void ribbonProduct_Click(object sender, EventArgs e)
+        private void mnuNhanVien_Click(object sender, EventArgs e)
         {
-            frmSanPham frm = new frmSanPham();
-            frm.MdiParent = this;
-            frm.Show();
+            frmNhanVien frmNhanVien = new frmNhanVien();
+            frmNhanVien.ShowDialog();
         }
 
-        private void ribbonEmployee_Click(object sender, EventArgs e)
+        private void mnuSanPham_Click(object sender, EventArgs e)
         {
-            frmNhanVien frm = new frmNhanVien();
-            frm.MdiParent = this;
-            frm.Show();
+            frmSanPham frmSanPham = new frmSanPham();
+            frmSanPham.ShowDialog();
         }
-<<<<<<< HEAD
-        
-        
 
         private void mnuHoaDonBan_Click(object sender, EventArgs e)
-=======
-
-        private void ribbonSaleBill_Click(object sender, EventArgs e)
->>>>>>> 562161aa30231269bdee86a6044ca31806b25285
         {
-            frmHoaDon frm = new frmHoaDon();
-            frm.MdiParent = this;
-            frm.Show();
+            frmHoaDon frmHoaDon = new frmHoaDon();
+            frmHoaDon.ShowDialog();
         }
-<<<<<<< HEAD
-        private void mnuTimKiem_Click(object sender, EventArgs e)
-=======
 
-        private void ribbonSearchBill_Click(object sender, EventArgs e)
->>>>>>> 562161aa30231269bdee86a6044ca31806b25285
+        private void mnuFindHoaDon_Click(object sender, EventArgs e)
         {
-            frmTimKiemHoaDon frm = new frmTimKiemHoaDon();
-            frm.MdiParent = this;
-            frm.Show();
+            frmTimKiemHoaDon frmTimKiemHoaDon = new frmTimKiemHoaDon();
+            frmTimKiemHoaDon.ShowDialog();
         }
-<<<<<<< HEAD
-        private void mnuHangNhap_Click(object sender, EventArgs e)
-        {
-            
-=======
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            Class.Functions.Connect();
-            this.IsMdiContainer = true;
->>>>>>> 562161aa30231269bdee86a6044ca31806b25285
+            Class.Functions.Connect(); //Mở kết nối
         }
     }
 }

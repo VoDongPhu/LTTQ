@@ -68,6 +68,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnDong);
             this.panel1.Controls.Add(this.btnTimKiem);
             this.panel1.Controls.Add(this.btnTimLai);
@@ -102,6 +103,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 355);
@@ -121,6 +123,7 @@
             // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.txtTongTien);
             this.panel3.Controls.Add(this.txtMaKhachHang);
             this.panel3.Controls.Add(this.txtMaNhanVien);
@@ -181,7 +184,6 @@
             this.txtMaHDBan.Name = "txtMaHDBan";
             this.txtMaHDBan.Size = new System.Drawing.Size(264, 22);
             this.txtMaHDBan.TabIndex = 6;
-            this.txtMaHDBan.TextChanged += new System.EventHandler(this.txtMaHDBan_TextChanged);
             // 
             // txtMaNV
             // 
@@ -248,6 +250,7 @@
             // 
             // dgvTKHoaDon
             // 
+            this.dgvTKHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvTKHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTKHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTKHoaDon.Location = new System.Drawing.Point(0, 113);

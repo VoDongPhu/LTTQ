@@ -37,6 +37,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.chkNu = new System.Windows.Forms.CheckBox();
             this.NgVaoLam = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.NgSinhNV = new System.Windows.Forms.DateTimePicker();
@@ -53,7 +54,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.chkNu = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -61,6 +61,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnDong);
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Controls.Add(this.btnXoa);
@@ -135,6 +136,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.chkNu);
             this.panel2.Controls.Add(this.NgVaoLam);
             this.panel2.Controls.Add(this.label8);
@@ -156,6 +158,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(884, 234);
             this.panel2.TabIndex = 0;
+            // 
+            // chkNu
+            // 
+            this.chkNu.AutoSize = true;
+            this.chkNu.Location = new System.Drawing.Point(255, 151);
+            this.chkNu.Name = "chkNu";
+            this.chkNu.Size = new System.Drawing.Size(48, 21);
+            this.chkNu.TabIndex = 15;
+            this.chkNu.Text = "Nữ";
+            this.chkNu.UseVisualStyleBackColor = true;
             // 
             // NgVaoLam
             // 
@@ -300,7 +312,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(272, 9);
+            this.label1.Location = new System.Drawing.Point(331, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(234, 25);
             this.label1.TabIndex = 0;
@@ -308,6 +320,7 @@
             // 
             // dgvNhanVien
             // 
+            this.dgvNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNhanVien.Location = new System.Drawing.Point(0, 234);
@@ -317,16 +330,6 @@
             this.dgvNhanVien.Size = new System.Drawing.Size(884, 166);
             this.dgvNhanVien.TabIndex = 1;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
-            // 
-            // chkNu
-            // 
-            this.chkNu.AutoSize = true;
-            this.chkNu.Location = new System.Drawing.Point(255, 151);
-            this.chkNu.Name = "chkNu";
-            this.chkNu.Size = new System.Drawing.Size(48, 21);
-            this.chkNu.TabIndex = 15;
-            this.chkNu.Text = "Nữ";
-            this.chkNu.UseVisualStyleBackColor = true;
             // 
             // frmNhanVien
             // 
