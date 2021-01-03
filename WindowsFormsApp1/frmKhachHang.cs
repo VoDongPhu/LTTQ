@@ -228,7 +228,11 @@ namespace WindowsFormsApp1
                 ResetValues();
             }
         }
+<<<<<<< HEAD:WindowsFormsApp1/frmKhachHang.cs
 
+=======
+               
+>>>>>>> f6b493ae7691762a7600f9de0469d1a279d38e66:WindowsFormsApp1/KhachHang.cs
         private void btnBoQua_Click(object sender, EventArgs e)
         {
             ResetValues();
@@ -275,7 +279,16 @@ namespace WindowsFormsApp1
                 SendKeys.Send("{TAB}");
         }
 
+<<<<<<< HEAD:WindowsFormsApp1/frmKhachHang.cs
        
     }   
+=======
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                this.Close();
+        }
+    }
+>>>>>>> f6b493ae7691762a7600f9de0469d1a279d38e66:WindowsFormsApp1/KhachHang.cs
 }
 

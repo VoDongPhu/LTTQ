@@ -55,6 +55,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnDong);
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Controls.Add(this.btnXoa);
@@ -127,6 +128,7 @@
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
+<<<<<<< HEAD:WindowsFormsApp1/frmKhachHang.Designer.cs
             // panel2
             // 
             this.panel2.Controls.Add(this.mtbDienThoai);
@@ -145,6 +147,30 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(981, 183);
             this.panel2.TabIndex = 1;
+=======
+            // frmKhachHang
+            // 
+            this.frmKhachHang.BackColor = System.Drawing.SystemColors.Control;
+            this.frmKhachHang.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.frmKhachHang.Controls.Add(this.mtbDienThoai);
+            this.frmKhachHang.Controls.Add(this.chkGioiTinhKhach);
+            this.frmKhachHang.Controls.Add(this.NgSinhKhach);
+            this.frmKhachHang.Controls.Add(this.txtTenKhach);
+            this.frmKhachHang.Controls.Add(this.txtMaKhach);
+            this.frmKhachHang.Controls.Add(this.label7);
+            this.frmKhachHang.Controls.Add(this.label6);
+            this.frmKhachHang.Controls.Add(this.label5);
+            this.frmKhachHang.Controls.Add(this.label4);
+            this.frmKhachHang.Controls.Add(this.label3);
+            this.frmKhachHang.Controls.Add(this.label2);
+            this.frmKhachHang.Controls.Add(this.label1);
+            this.frmKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.frmKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmKhachHang.Location = new System.Drawing.Point(0, 0);
+            this.frmKhachHang.Name = "frmKhachHang";
+            this.frmKhachHang.Size = new System.Drawing.Size(894, 214);
+            this.frmKhachHang.TabIndex = 2;
+>>>>>>> f6b493ae7691762a7600f9de0469d1a279d38e66:WindowsFormsApp1/KhachHang.Designer.cs
             // 
             // mtbDienThoai
             // 
@@ -175,6 +201,18 @@
             this.chkGioiTinhKhach.UseVisualStyleBackColor = true;
             this.chkGioiTinhKhach.KeyUp += new System.Windows.Forms.KeyEventHandler(this.chkGioiTinhKhach_KeyUp);
             // 
+<<<<<<< HEAD:WindowsFormsApp1/frmKhachHang.Designer.cs
+=======
+            // NgSinhKhach
+            // 
+            this.NgSinhKhach.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.NgSinhKhach.Location = new System.Drawing.Point(670, 46);
+            this.NgSinhKhach.Name = "NgSinhKhach";
+            this.NgSinhKhach.Size = new System.Drawing.Size(182, 26);
+            this.NgSinhKhach.TabIndex = 19;
+            this.NgSinhKhach.KeyUp += new System.Windows.Forms.KeyEventHandler(this.NgSinhKhach_KeyUp);
+            // 
+>>>>>>> f6b493ae7691762a7600f9de0469d1a279d38e66:WindowsFormsApp1/KhachHang.Designer.cs
             // txtTenKhach
             // 
             this.txtTenKhach.Location = new System.Drawing.Point(200, 88);
@@ -187,8 +225,13 @@
             // 
             this.txtMaKhach.Location = new System.Drawing.Point(200, 42);
             this.txtMaKhach.Name = "txtMaKhach";
+<<<<<<< HEAD:WindowsFormsApp1/frmKhachHang.Designer.cs
             this.txtMaKhach.Size = new System.Drawing.Size(182, 22);
             this.txtMaKhach.TabIndex = 6;
+=======
+            this.txtMaKhach.Size = new System.Drawing.Size(167, 26);
+            this.txtMaKhach.TabIndex = 15;
+>>>>>>> f6b493ae7691762a7600f9de0469d1a279d38e66:WindowsFormsApp1/KhachHang.Designer.cs
             this.txtMaKhach.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMaKhach_KeyUp);
             // 
             // label6
@@ -255,10 +298,48 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 0;
+<<<<<<< HEAD:WindowsFormsApp1/frmKhachHang.Designer.cs
             this.label1.Text = "Mã khách hàng";
+=======
+            this.label1.Text = "Danh Mục Khách Hàng";
+            // 
+            // chkGioiTinhKH
+            // 
+            this.chkGioiTinhKH.AutoSize = true;
+            this.chkGioiTinhKH.Checked = true;
+            this.chkGioiTinhKH.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkGioiTinhKH.Location = new System.Drawing.Point(204, 153);
+            this.chkGioiTinhKH.Name = "chkGioiTinhKH";
+            this.chkGioiTinhKH.Size = new System.Drawing.Size(66, 24);
+            this.chkGioiTinhKH.TabIndex = 13;
+            this.chkGioiTinhKH.Text = "Nam";
+            this.chkGioiTinhKH.UseVisualStyleBackColor = true;
+            // 
+            // txtTenKH
+            // 
+            this.txtTenKH.Location = new System.Drawing.Point(204, 99);
+            this.txtTenKH.Name = "txtTenKH";
+            this.txtTenKH.Size = new System.Drawing.Size(173, 22);
+            this.txtTenKH.TabIndex = 6;
+            // 
+            // txtMaKH
+            // 
+            this.txtMaKH.Location = new System.Drawing.Point(204, 51);
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.Size = new System.Drawing.Size(173, 22);
+            this.txtMaKH.TabIndex = 5;
+            // 
+            // txtSoDiem
+            // 
+            this.txtSoDiem.Location = new System.Drawing.Point(670, 154);
+            this.txtSoDiem.Name = "txtSoDiem";
+            this.txtSoDiem.Size = new System.Drawing.Size(200, 22);
+            this.txtSoDiem.TabIndex = 16;
+>>>>>>> f6b493ae7691762a7600f9de0469d1a279d38e66:WindowsFormsApp1/KhachHang.Designer.cs
             // 
             // dgvKhachHang
             // 
+            this.dgvKhachHang.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvKhachHang.Location = new System.Drawing.Point(0, 183);

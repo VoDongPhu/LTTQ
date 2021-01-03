@@ -89,16 +89,14 @@ namespace WindowsFormsApp1
 
         private void txtTongTien_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((e.KeyChar >= '0') && (e.KeyChar <= '9')) || (Convert.ToInt32(e.KeyChar) == 8))
-                e.Handled = false;
-
-            else
-                e.Handled = true;
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;            
         }
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if(MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                this.Close();
         }
         private void dgvTKHoaDon_DoubleClick(object sender, EventArgs e)
         {
@@ -112,10 +110,6 @@ namespace WindowsFormsApp1
                 frm.ShowDialog();
             }
         }
-
-        private void txtMaHDBan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

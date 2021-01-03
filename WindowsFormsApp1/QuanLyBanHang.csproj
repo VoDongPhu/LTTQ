@@ -85,12 +85,15 @@
     <Compile Include="frmExport.Designer.cs">
       <DependentUpon>frmExport.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmKhachHang.Designer.cs">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> f6b493ae7691762a7600f9de0469d1a279d38e66
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,9 +132,12 @@
     <EmbeddedResource Include="frmExport.resx">
       <DependentUpon>frmExport.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> f6b493ae7691762a7600f9de0469d1a279d38e66
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>

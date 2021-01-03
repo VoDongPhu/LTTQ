@@ -31,6 +31,7 @@ namespace WindowsFormsApp1
         {
             this.dgvExport = new System.Windows.Forms.DataGridView();
             this.btnExport = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExport)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,11 +56,22 @@ namespace WindowsFormsApp1
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(664, 379);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 48);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Text = "Đóng";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmExport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.dgvExport);
             this.Name = "frmExport";
@@ -74,5 +86,6 @@ namespace WindowsFormsApp1
 
         private System.Windows.Forms.DataGridView dgvExport;
         private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnExit;
     }
 }

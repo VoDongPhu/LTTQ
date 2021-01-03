@@ -24,9 +24,9 @@ namespace WindowsFormsApp1
         {
             txtMaSP.Text = "";
             txtTenSP.Text = "";
-            txtSoLuong.Text = "0";
-            txtDonGiaNhap.Text = "0";
-            txtDonGiaBan.Text = "0";
+            txtSoLuong.Text = "";
+            txtDonGiaNhap.Text = "";
+            txtDonGiaBan.Text = "";
             txtSoLuong.Enabled = true;
             txtDonGiaNhap.Enabled = false;
             txtDonGiaBan.Enabled = false;
@@ -64,6 +64,7 @@ namespace WindowsFormsApp1
             btnLuu.Enabled = false;
             btnBoQua.Enabled = false;
             LoadDataGridView();
+            ResetValues();
         }
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -265,7 +266,8 @@ namespace WindowsFormsApp1
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if(MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                this.Close();
         }
 
         private void btnPDF_Click(object sender, EventArgs e)

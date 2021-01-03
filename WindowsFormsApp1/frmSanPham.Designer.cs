@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSanPham));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnPDF = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -57,7 +58,6 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
-            this.btnPDF = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
             this.panel2.SuspendLayout();
@@ -66,6 +66,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnPDF);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label7);
@@ -89,6 +90,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(961, 224);
             this.panel1.TabIndex = 0;
+            // 
+            // btnPDF
+            // 
+            this.btnPDF.Location = new System.Drawing.Point(883, 3);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(75, 29);
+            this.btnPDF.TabIndex = 20;
+            this.btnPDF.Text = "PDF";
+            this.btnPDF.UseVisualStyleBackColor = true;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
             // 
             // label4
             // 
@@ -202,6 +213,7 @@
             // 
             // picAnh
             // 
+            this.picAnh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picAnh.Location = new System.Drawing.Point(753, 38);
             this.picAnh.Name = "picAnh";
             this.picAnh.Size = new System.Drawing.Size(161, 170);
@@ -250,6 +262,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.btnHienThiDS);
             this.panel2.Controls.Add(this.btnTimKiem);
             this.panel2.Controls.Add(this.btnDong);
@@ -346,6 +359,7 @@
             // 
             // dgvSanPham
             // 
+            this.dgvSanPham.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSanPham.Location = new System.Drawing.Point(0, 224);
@@ -355,16 +369,6 @@
             this.dgvSanPham.Size = new System.Drawing.Size(961, 172);
             this.dgvSanPham.TabIndex = 1;
             this.dgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
-            // 
-            // btnPDF
-            // 
-            this.btnPDF.Location = new System.Drawing.Point(883, 3);
-            this.btnPDF.Name = "btnPDF";
-            this.btnPDF.Size = new System.Drawing.Size(75, 29);
-            this.btnPDF.TabIndex = 20;
-            this.btnPDF.Text = "PDF";
-            this.btnPDF.UseVisualStyleBackColor = true;
-            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
             // 
             // frmSanPham
             // 
