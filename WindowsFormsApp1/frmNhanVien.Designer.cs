@@ -40,11 +40,9 @@
             this.NgVaoLam = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.NgSinhNV = new System.Windows.Forms.DateTimePicker();
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.SDTNV = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.chkGioiTinhNV = new System.Windows.Forms.CheckBox();
             this.txtTenNV = new System.Windows.Forms.TextBox();
             this.txtMaNV = new System.Windows.Forms.TextBox();
@@ -53,7 +51,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.chkNu = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -135,15 +132,12 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.chkNu);
             this.panel2.Controls.Add(this.NgVaoLam);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.NgSinhNV);
-            this.panel2.Controls.Add(this.txtMatKhau);
             this.panel2.Controls.Add(this.SDTNV);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.chkGioiTinhNV);
             this.panel2.Controls.Add(this.txtTenNV);
             this.panel2.Controls.Add(this.txtMaNV);
@@ -160,7 +154,7 @@
             // NgVaoLam
             // 
             this.NgVaoLam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.NgVaoLam.Location = new System.Drawing.Point(622, 185);
+            this.NgVaoLam.Location = new System.Drawing.Point(622, 155);
             this.NgVaoLam.Name = "NgVaoLam";
             this.NgVaoLam.Size = new System.Drawing.Size(176, 22);
             this.NgVaoLam.TabIndex = 14;
@@ -170,7 +164,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(445, 191);
+            this.label8.Location = new System.Drawing.Point(448, 155);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(106, 17);
             this.label8.TabIndex = 13;
@@ -183,13 +177,6 @@
             this.NgSinhNV.Name = "NgSinhNV";
             this.NgSinhNV.Size = new System.Drawing.Size(176, 22);
             this.NgSinhNV.TabIndex = 8;
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.Location = new System.Drawing.Point(622, 139);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(176, 22);
-            this.txtMatKhau.TabIndex = 12;
             // 
             // SDTNV
             // 
@@ -220,17 +207,6 @@
             this.label6.Size = new System.Drawing.Size(119, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "Số điện thoại";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label5.Location = new System.Drawing.Point(444, 143);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 20);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Mật khẩu";
             // 
             // chkGioiTinhNV
             // 
@@ -318,16 +294,6 @@
             this.dgvNhanVien.TabIndex = 1;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
-            // chkNu
-            // 
-            this.chkNu.AutoSize = true;
-            this.chkNu.Location = new System.Drawing.Point(255, 151);
-            this.chkNu.Name = "chkNu";
-            this.chkNu.Size = new System.Drawing.Size(48, 21);
-            this.chkNu.TabIndex = 15;
-            this.chkNu.Text = "Nữ";
-            this.chkNu.UseVisualStyleBackColor = true;
-            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -360,11 +326,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.MaskedTextBox SDTNV;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox chkGioiTinhNV;
         private System.Windows.Forms.TextBox txtTenNV;
         private System.Windows.Forms.Button btnDong;
@@ -376,6 +340,5 @@
         private System.Windows.Forms.DateTimePicker NgSinhNV;
         private System.Windows.Forms.DateTimePicker NgVaoLam;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckBox chkNu;
     }
 }

@@ -126,3 +126,11 @@ C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBa
 C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\bin\Debug\itextsharp.xml
 C:\Users\Tan Viet\Desktop\Lập trình trực quan\Đồ án cuối kì\QuanLyBanHang\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmExport.resources
 >>>>>>> 562161aa30231269bdee86a6044ca31806b25285
+C:\Users\ASUS\Desktop\Quản Lý Bán Hàng\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmExport.resources
+C:\Users\ASUS\Desktop\Quản Lý Bán Hàng\lttq\WindowsFormsApp1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ASUS\Desktop\Quản Lý Bán Hàng\lttq\WindowsFormsApp1\bin\Debug\itextsharp.dll
+C:\Users\ASUS\Desktop\Quản Lý Bán Hàng\lttq\WindowsFormsApp1\bin\Debug\System.Windows.Forms.Ribbon.dll
+C:\Users\ASUS\Desktop\Quản Lý Bán Hàng\lttq\WindowsFormsApp1\bin\Debug\itextsharp.xml
+C:\Users\ASUS\Desktop\Quản Lý Bán Hàng\lttq\WindowsFormsApp1\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Quản Lý Bán Hàng\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmKhachHang.resources
+C:\Users\ASUS\Desktop\Quản Lý Bán Hàng\lttq\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDangNhap.resources

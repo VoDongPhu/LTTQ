@@ -31,15 +31,13 @@ namespace WindowsFormsApp1
             dgvNhanVien.Columns[2].HeaderText = "Ngày sinh";
             dgvNhanVien.Columns[3].HeaderText = "Giới tính";
             dgvNhanVien.Columns[4].HeaderText = "Số Điện thoại";
-            dgvNhanVien.Columns[5].HeaderText = "Mật khẩu";
-            dgvNhanVien.Columns[6].HeaderText = "Ngày vào làm";
+            dgvNhanVien.Columns[5].HeaderText = "Ngày vào làm";
             dgvNhanVien.Columns[0].Width = 100;
             dgvNhanVien.Columns[1].Width = 150;
             dgvNhanVien.Columns[2].Width = 100;
             dgvNhanVien.Columns[3].Width = 150;
             dgvNhanVien.Columns[4].Width = 100;
             dgvNhanVien.Columns[5].Width = 100;
-            dgvNhanVien.Columns[6].Width = 100;
             dgvNhanVien.AllowUserToAddRows = false;
             dgvNhanVien.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
@@ -79,6 +77,7 @@ namespace WindowsFormsApp1
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            
             btnXoa.Enabled = false;
             btnSua.Enabled = false;
             btnBoQua.Enabled = true;
@@ -93,7 +92,6 @@ namespace WindowsFormsApp1
         {
             txtMaNV.Text = "";
             txtTenNV.Text = "";
-            txtMatKhau.Text = "";
             chkGioiTinhNV.Checked = false;
             SDTNV.Text = "";
             NgSinhNV.Value = DateTime.Now;
@@ -115,12 +113,6 @@ namespace WindowsFormsApp1
                 txtTenNV.Focus();
                 return;
             }
-            if (txtMatKhau.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Bạn phải nhập mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtMatKhau.Focus();
-                return;
-            }
             if (SDTNV.Text == "(   )     -")
             {
                 MessageBox.Show("Bạn phải nhập số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -139,7 +131,7 @@ namespace WindowsFormsApp1
                 txtMaNV.Text = "";
                 return;
             }
-            sql = "INSERT INTO tblNhanVien(MaNhanVien,TenNhanVien,NgSinhNhanVien, MatKhau,SoDTNhanVien, GioiTinhNhanVien,NgayVaoLam) VALUES (N'" + txtMaNV.Text.Trim() + "',N'" + txtTenNV.Text.Trim() + "','" + NgSinhNV.Value + "',N'" + txtMatKhau.Text.Trim() + "','" + SDTNV.Text + "',N'" + gt + "','" + NgVaoLam.Value + "')";
+            sql = "INSERT INTO tblNhanVien(MaNhanVien,TenNhanVien,NgSinhNhanVien,SoDTNhanVien, GioiTinhNhanVien,NgayVaoLam) VALUES (N'" + txtMaNV.Text.Trim() + "',N'" + txtTenNV.Text.Trim() + "','" + NgSinhNV.Value + "','" + SDTNV.Text + "',N'" + gt + "','" + NgVaoLam.Value + "')";
             Functions.RunSQL(sql);
             LoadDataGridView();
             ResetValues();
@@ -170,12 +162,7 @@ namespace WindowsFormsApp1
                 txtTenNV.Focus();
                 return;
             }
-            if (txtMatKhau.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Bạn phải nhập mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtMatKhau.Focus();
-                return;
-            }
+          
             if (SDTNV.Text == "(   )     -")
             {
                 MessageBox.Show("Bạn phải nhập số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -187,7 +174,6 @@ namespace WindowsFormsApp1
             else
                 gt = "Nữ";
             sql = "UPDATE tblNhanVien SET  TenNhanVien=N'" + txtTenNV.Text.Trim().ToString() +
-                    "',MatKhau=N'" + txtMatKhau.Text.Trim().ToString() +
                     "',SoDTNhanVien='" + SDTNV.Text.ToString() + "',GioiTinhNhanVien=N'" + gt +
                     "',NgSinhNhanVien='" + NgSinhNV.Value +
                     "',NgayVaoLam='"+NgVaoLam.Value +
@@ -259,7 +245,6 @@ namespace WindowsFormsApp1
             txtTenNV.Text = dgvNhanVien.CurrentRow.Cells["TenNhanVien"].Value.ToString();
             if (dgvNhanVien.CurrentRow.Cells["GioiTinhNhanVien"].Value.ToString() == "Nam") chkGioiTinhNV.Checked = true;
             else chkGioiTinhNV.Checked = false;
-            txtMatKhau.Text = dgvNhanVien.CurrentRow.Cells["MatKhau"].Value.ToString();
             SDTNV.Text = dgvNhanVien.CurrentRow.Cells["SoDTNhanVien"].Value.ToString();
             NgSinhNV.Value = (DateTime)dgvNhanVien.CurrentRow.Cells["NgSinhNhanVien"].Value;
             NgVaoLam.Value = (DateTime)dgvNhanVien.CurrentRow.Cells["NgayVaoLam"].Value;
@@ -267,5 +252,7 @@ namespace WindowsFormsApp1
             btnXoa.Enabled = true;
             btnXoa.Enabled = true;
         }
+
+       
     }
 }
